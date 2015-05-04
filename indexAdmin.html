@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+
+
+ <script>
+	function doSubmit(){
+		removeErrorMessages();
+		validateRequired("usuario","El Campo Usuario es requerido");
+		validateRequired("passwd","El Campo Contraseña es requerido");
+
+		if(formValidation && validarLogin()){
+			if(window.document.forms[0].usuario.value=="jefe"){
+				window.location="admin.html";
+			}else if(window.document.forms[0].usuario.value=="profesor"){
+					window.location="admin.html";
+		}
+	}
+
+	function validarLogin(){
+		if(window.document.forms[0].usuario.value=="profesor"
+		|| window.document.forms[0].usuario.value=="jefe"){
+			return true;
+		}else{
+			invalidateForm("Combinacion usuario/contraseña es incorrecta");
+			return false;
+		}
+
+	}
+}
+
+
+
+ </script>
+
+
+
+
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/estilo1.css">
+<script type="text/javascript" src="js/main.js" ></script>
+<meta charset="UTF-8">
+	<title>
+	Sistema de Asignación de Horarios y Salones
+	</title>
+	<link rel="shortcut icon" href="img/favicon.png" type="favicon/ico" />
+
+</head>
+
+
+
+<body>
+<center>
+		<img id="banner" src="img/header.png" height="100%"/>
+		</center>
+
+<h1 align="center">
+Sistema de Asignacion de Grupos y Salones
+</h1>
+
+<br>
+
+
+<form id="theForm">
+		<center>
+		<table class="formTable">
+
+			<tr>
+				<th class="formTitle" colspan="2">
+					Usuario
+				</th>
+
+				</tr>
+				<tr>
+
+				<td class="field">
+					<input id="usuario">
+				</td>
+			</tr>
+			<tr>
+				<th class="formTitle" colspan="2">
+					Contraseña
+				</th>
+				</tr>
+
+
+				<tr>
+
+				<td class="field">
+					<input id="passwd" type="password">
+				</td>
+
+			</tr>
+			<tr>
+				<td colspan="2" align="center">
+					<input type="button" value="Entrar" onclick="doSubmit()">
+				</td>
+			</tr>
+		</table>
+		</center>
+		</form>
+
+</body>
+</html>

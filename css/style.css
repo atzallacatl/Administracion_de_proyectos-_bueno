@@ -1,0 +1,159 @@
+table.formTable {
+	width:382px;
+	height: 207px;
+	background-color:#000040;
+	box-shadow: 10px 10px 5px #888888;
+	color: #ffffff;
+
+	-moz-border-radius-bottomleft:25px;
+	-webkit-border-bottom-left-radius:25px;
+	border-bottom-left-radius:25px;
+
+	-moz-border-radius-bottomright:25px;
+	-webkit-border-bottom-right-radius:25px;
+	border-bottom-right-radius:25px;
+
+	-moz-border-radius-topright:25px;
+	-webkit-border-top-right-radius:25px;
+	border-top-right-radius:25px;
+
+	-moz-border-radius-topleft:25px;
+	-webkit-border-top-left-radius:25px;
+	border-top-left-radius:25px;
+ }
+ th.formTitle{
+	text-align:center;
+ }
+ td.label {
+ width:50%;
+ text-align:right;
+ }
+
+ td.field {
+ width:50%;
+ text-align:center;
+ }
+ input[type=button] {
+	-webkit-box-shadow:rgba(0,0,0,0.2) 0 1px 0 0;
+	-moz-box-shadow:rgba(0,0,0,0.2) 0 1px 0 0;
+	box-shadow:rgba(0,0,0,0.2) 0 1px 0 0;
+	color:#333;
+	background-color:#FA2;
+	border-radius:5px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border:none;
+	font-family:'Helvetica Neue',Arial,sans-serif;
+	font-size:12px;
+	font-weight:700;
+	height:24px;
+	padding:4px 16px;
+	text-shadow:#FE6 0 1px 0;
+	cursor:pointer;
+}
+
+.error{
+	color:#ff0000;
+	text-align:center;
+}
+
+.catalog {
+	margin:0px;padding:0px;
+	width:900px;
+	box-shadow: 10px 10px 5px #888888;
+	border:1px solid #ffffff;
+
+	-moz-border-radius-bottomleft:8px;
+	-webkit-border-bottom-left-radius:8px;
+	border-bottom-left-radius:8px;
+
+	-moz-border-radius-bottomright:8px;
+	-webkit-border-bottom-right-radius:8px;
+	border-bottom-right-radius:8px;
+
+	-moz-border-radius-topright:8px;
+	-webkit-border-top-right-radius:8px;
+	border-top-right-radius:8px;
+
+	-moz-border-radius-topleft:8px;
+	-webkit-border-top-left-radius:8px;
+	border-top-left-radius:8px;
+}.catalog table{
+    border-collapse: collapse;
+        border-spacing: 0;
+	width:900px;
+	height:100%;
+	margin:0px;padding:0px;
+}.catalog tr:last-child td:last-child {
+	-moz-border-radius-bottomright:8px;
+	-webkit-border-bottom-right-radius:8px;
+	border-bottom-right-radius:8px;
+}
+.catalog table tr:first-child td:first-child {
+	-moz-border-radius-topleft:8px;
+	-webkit-border-top-left-radius:8px;
+	border-top-left-radius:8px;
+}
+.catalog table tr:first-child td:last-child {
+	-moz-border-radius-topright:8px;
+	-webkit-border-top-right-radius:8px;
+	border-top-right-radius:8px;
+}.catalog tr:last-child td:first-child{
+	-moz-border-radius-bottomleft:8px;
+	-webkit-border-bottom-left-radius:8px;
+	border-bottom-left-radius:8px;
+}.catalog tr:hover td{
+
+}
+.catalog tr:nth-child(odd){ background-color:#aad4ff; }
+.catalog tr:nth-child(even)    { background-color:#f9f9f9; }.catalog td{
+	vertical-align:middle;
+
+
+	border:1px solid #ffffff;
+	border-width:0px 1px 1px 0px;
+	text-align:left;
+	padding:7px;
+	font-size:14px;
+	font-family:Arial;
+	font-weight:normal;
+	color:#000000;
+}.catalog tr:last-child td{
+	border-width:0px 1px 0px 0px;
+}.catalog tr td:last-child{
+	border-width:0px 0px 1px 0px;
+}.catalog tr:last-child td:last-child{
+	border-width:0px 0px 0px 0px;
+}
+.catalog tr:first-child td{
+		background:-o-linear-gradient(bottom, #053360 5%, #053360 100%);	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #053360), color-stop(1, #053360) );
+	background:-moz-linear-gradient( center top, #053360 5%, #053360 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr="#053360", endColorstr="#053360");	background: -o-linear-gradient(top,#053360,053360);
+
+	background-color:#053360;
+	border:0px solid #ffffff;
+	text-align:center;
+	border-width:0px 0px 1px 1px;
+	font-size:14px;
+	font-family:Arial;
+	font-weight:bold;
+	color:#ffffff;
+}
+.catalog tr:first-child:hover td{
+	background:-o-linear-gradient(bottom, #053360 5%, #053360 100%);	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #053360), color-stop(1, #053360) );
+	background:-moz-linear-gradient( center top, #053360 5%, #053360 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr="#053360", endColorstr="#053360");	background: -o-linear-gradient(top,#053360,053360);
+
+	background-color:#053360;
+}
+.catalog tr:first-child td:first-child{
+	border-width:0px 0px 1px 0px;
+}
+.catalog tr:first-child td:last-child{
+	border-width:0px 0px 1px 1px;
+}
+
+.catalog img{
+	cursor: hand;
+	height: 20px;
+}

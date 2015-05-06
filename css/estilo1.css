@@ -2,20 +2,7 @@ html,body{
 	height: 100%;
 }
 
-#menu{
-width: 100%;
-height: 85%;
-margin-bottom: 6%;
-}
 
-
-#navegacion{
-	margin-left: 4%;
-	float:left;
-	width: 16%;
-	height:100%;
-	
-}
 
 
 #areaDeTrabajo{
@@ -28,44 +15,11 @@ margin-bottom: 6%;
 
 }
 
-
-
-
-
-
-
-
-a,span {
-	position: relative;
-	color: #09f;
-	text-decoration: none;
-	font-family: sans-serif;
-}
 h1,h2,h3 {
 	color: #09f;
 	text-decoration: none;
 	font-family: sans-serif;
 }
-
-
-ul{
-    margin: 0;
-     padding: 0;
-     list-style-type: none;
-     font-family: sans-serif;
-     font-size: 16px;
-     font-weight: bold;
-}
-
-ul li{
-background-color: #AF7051;
-
-	height:2.5em;
-	line-height:2.5em;
-	border-color: #AF7051;
-	border-style: solid;
-	border-width: 3px 0;}
-
 
 
 
@@ -75,10 +29,72 @@ body{
 }
 
 
-    li:hover {
-       background-color: #F0D7B5;
-     }
-    li:hover a {
-       color: #AF7051;
-       
-     }
+
+
+@import url(http://fonts.googleapis.com/css?family=Oxygen+Mono);
+/* Please Keep this font import at the very top of any CSS file */
+@charset "UTF-8";
+/* Starter CSS for Flyout Menu */
+#cssmenu {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  line-height: 1;
+}
+#cssmenu ul,
+#cssmenu ul li,
+#cssmenu ul ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+#cssmenu ul {
+  position: relative;
+  z-index: 597;
+  float: left;
+}
+#cssmenu ul li {
+  float: left;
+  min-height: 1px;
+  line-height: 1em;
+  vertical-align: middle;
+  position: relative;
+}
+#cssmenu ul li.hover,
+#cssmenu ul li:hover {
+  position: relative;
+  z-index: 599;
+  cursor: default;
+}
+#cssmenu ul ul {
+  visibility: hidden;
+  position: absolute;
+  top: 100%;
+  left: 0px;
+  z-index: 598;
+  width: 100%;
+}
+#cssmenu ul ul li {
+  float: none;
+}
+#cssmenu ul ul ul {
+  top: -2px;
+  right: 0;
+}
+#cssmenu ul li:hover > ul {
+  visibility: visible;
+}
+#cssmenu ul ul {
+  top: 1px;
+  left: 99%;
+}
+#cssmenu ul li {
+  float: none;
+}
+#cssmenu ul ul {
+  margin-top: 1px;
+}
+#cssmenu ul ul li {
+  font-weight: normal;
+}
+

@@ -3,108 +3,74 @@
 
 <head>
 
-
-<link rel="stylesheet" href="css/estilo1.css">
-<link rel="stylesheet" href="css/style.css">
-<script type="text/javascript" src="js/main.js" ></script>
-<script type="text/javascript" src="js/menu.js" ></script>
-<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/estilo1.css">
+	<link rel="stylesheet" href="css/style.css">
+	<script type="text/javascript" src="js/main.js" ></script>
+	<script type="text/javascript" src="js/menu.js" ></script>
+	<meta charset="UTF-8">
 	<title>
-	Sistema de Asignación de Horarios y Salones
+		Sistema de Asignación de Horarios y Salones
 	</title>
 	<link rel="shortcut icon" href="img/favicon.png" type="favicon/ico" />
 
-
 </head>
 
-
-
 <body>
-<center>
+	<center>
 		<img id="banner" src="img/header.png" height="100%"/>
-		</center>
-
-
-<br>
-<br>
-
-
-
-
+	</center>
 
 	<div id="menu1">
 
+		<div id="menu">
+			<ul>
+  				<li class="nivel1 primera"><a>Jefes de carrera</a>
+				<ul>
+					<li><a href="ConsultarJefesCarrera.html">Consultar</a></li>
+					<li><a href="AgregarJefesCarrera.html">Agregar</a></li>
+					<li><a href="ConsultarJefesCarrera.html">Editar</a></li>
+				</ul>
+			  	</li>
+  				<li class="nivel1"><a>Profesores</a>
+					<ul>
+						<li><a href="ConsultarProfesores.html">Consultar</a></li>
+						<li><a href="AgregarProfesores.html">Agregar</a></li>
+					</ul>
+				</li>
+  				<li class="nivel1"><a>Salones</a>
+					<ul>
+						<li><a href="ConsultarSalones.html">Consultar</a></li>
+						<li><a href="AgregarSalones.html">Agregar</a></li>
+						<li><a href="ConsultarSalones.html">Editar</a></li>
+						<li><a href="ConsultarSalones.html">Eliminar</a></li>
+					</ul>
+				</li>
+  				<li class="nivel1"><a>Asignaturas</a>
+					<ul>
+						<li><a href="ConsultarAsignaturas.html">Consultar</a></li>
+						<li><a href="AgregarAsignaturas.html">Agregar</a></li>
+						<li><a href="ConsultarAsignaturas.html">Editar</a></li>
+						<li><a href="ConsultarAsignaturas.html">Eliminar</a></li>
+					</ul>
+				</li>
+  				<li class="nivel1"><a href="SolicitudAsignaturas.html">Solicitudes de asignaturas</a>	
+				</li>
+  				<li class="nivel1"><a href="SolicitudAsignaturasNuevas.html">Solicitudes de asignaturas nuevas</a>	
+				</li>
+				<li class="nivel1"><a>Lista Asignaturas-Profesor</a>	
+				</li>
+			</ul>
+		</div>
 
 
-
-<div id="menu">
-<ul>
-  <li class="nivel1 primera"><a href="http://araudi.net/Desplegables/menu_desplegable8.html#" class="nivel1">Opción 1</a>
-<!--[if lte IE 6]><a href="#" class="nivel1ie">Opción 1<table class="falsa"><tr><td><![endif]-->
-	<ul>
-		<li class="primera"><a href="http://www.google.es/">Opción 1.1</a></li>
-		<li><a href="http://www.idplus.org/">idplus.org</a></li>
-	</ul>
-<!--[if lte IE 6]></td></tr></table></a><![endif]-->
-  </li>
-  <li class="nivel1"><a href="http://araudi.net/Desplegables/menu_desplegable8.html#" class="nivel1">Opción 2</a>
-<!--[if lte IE 6]><a href="#" class="nivel1ie">Opción 2<table class="falsa"><tr><td><![endif]-->
-	<ul>
-		<li class="primera"><a href="http://araudi.net/Desplegables/menu_desplegable8.html#">Opción 2.1</a></li>
-		<li><a href="http://araudi.net/Desplegables/menu_desplegable8.html#">Opción 2.2</a></li>
-		<li><a href="http://araudi.net/Desplegables/menu_desplegable8.html#">Opción 2.3</a></li>
-		<li><a href="http://araudi.net/Desplegables/menu_desplegable8.html#">Opción 2.4</a></li>
-		<li><a href="http://www.idplus.org/">idplus.org</a></li>
-	</ul>
-<!--[if lte IE 6]></td></tr></table></a><![endif]-->
-</li>
-  <li class="nivel1"><a href="http://araudi.net/Desplegables/menu_desplegable8.html#" class="nivel1">Opción 3</a>
-<!--[if lte IE 6]><a href="#" class="nivel1ie">Opción 3<table class="falsa"><tr><td><![endif]-->
-	<ul>
-		<li class="primera"><a href="http://araudi.net/Desplegables/menu_desplegable8.html#">Opción 3.1</a></li>
-		<li><a href="http://araudi.net/Desplegables/menu_desplegable8.html#">Opción 3.2</a></li>
-		<li><a href="http://www.idplus.org/">idplus.org</a></li>
-	</ul>
-<!--[if lte IE 6]></td></tr></table></a><![endif]-->
-</li>
-  <li class="nivel1"><a href="http://araudi.net/Desplegables/menu_desplegable8.html#" class="nivel1">Opción 4</a>
-<!--[if lte IE 6]><a href="#" class="nivel1ie">Opción 4<table class="falsa"><tr><td><![endif]-->
-	<ul>
-		<li class="primera"><a href="http://araudi.net/Desplegables/menu_desplegable8.html#">Opción 4.1</a></li>
-		<li><a href="http://araudi.net/Desplegables/menu_desplegable8.html#">Opción 4.2</a></li>
-		<li><a href="http://araudi.net/Desplegables/menu_desplegable8.html#">Opción 4.3</a></li>
-		<li><a href="http://www.idplus.org/">idplus.org</a></li>
-	</ul>
-<!--[if lte IE 6]></td></tr></table></a><![endif]-->
-</li>
-  <li class="nivel1"><a href="http://araudi.net/Desplegables/menu_desplegable8.html#" class="nivel1">Opción 5</a>
-<!--[if lte IE 6]><a href="#" class="nivel1ie">Opción 5<table class="falsa"><tr><td><![endif]-->
-	<ul>
-		<li class="primera"><a href="http://araudi.net/Desplegables/menu_desplegable8.html#">Opción 5.1</a></li>
-		<li><a href="http://araudi.net/Desplegables/menu_desplegable8.html#">Opción 5.2</a></li>
-		<li><a href="http://www.idplus.org/">idplus.org</a></li>
-	</ul>
-<!--[if lte IE 6]></td></tr></table></a><![endif]-->
-</li>
-</ul>
-</div>
-
-
-			<div id="areaDeTrabajo">
+		<div id="areaDeTrabajo">
 			<center>
-			<h2> Area de trabajo </h2>
+				<h2> Area de trabajo </h2>
 			</center>
-			</div>
+		</div>
 
-
-
-
-
-			</div>
-
+	</div>
 
 </body>
-
-
 
 </html>

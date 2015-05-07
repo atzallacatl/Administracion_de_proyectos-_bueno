@@ -7,6 +7,12 @@
 	<link rel="stylesheet" href="css/style.css">
 	<script type="text/javascript" src="js/main.js" ></script>
 	<script type="text/javascript" src="js/menu.js" ></script>
+
+	<script src="js/alertify.min.js"></script>
+	<link rel="stylesheet" href="css/alertify.core.css" />
+	<link rel="stylesheet" href="css/alertify.default.css" />
+	<script src="js/dialogs.js"></script>
+
 	<meta charset="UTF-8">
 	<title>
 		Sistema de Asignación de Horarios y Salones
@@ -53,11 +59,11 @@
 						<li><a href="ConsultarAsignaturas.html">Eliminar</a></li>
 					</ul>
 				</li>
-  				<li class="nivel1"><a href="SolicitudAsignaturas.html">Solicitudes de asignaturas</a>	
+  				<li class="nivel1"><a href="SolicitudAsignaturas.html">Solicitudes de asignaturas</a>
 				</li>
-  				<li class="nivel1"><a href="SolicitudAsignaturasNuevas.html">Solicitudes de asignaturas nuevas</a>	
+  				<li class="nivel1"><a href="SolicitudAsignaturasNuevas.html">Solicitudes de asignaturas nuevas</a>
 				</li>
-  				<li class="nivel1"><a>Lista Asignaturas-Profesor</a>	
+  				<li class="nivel1"><a>Lista Asignaturas-Profesor</a>
 				</li>
 			</ul>
 		</div>
@@ -67,9 +73,71 @@
 			<center>
 				<h2> Area de trabajo </h2>
 			</center>
+
+<h3 align="center">Catálogo de Materias</h3>
+		<form id="theForm">
+		<center>
+		<table class="formTable">
+			<tr>
+				<th class="formTitle" colspan="2">
+					Agregar Materia
+				</th>
+			</tr>
+			<tr>
+				<td class="label">
+					Nombre:
+				</td>
+				<td class="field">
+					<input id="nombre">
+				</td>
+			</tr>
+			<tr>
+				<td class="label">
+					Clave:
+				</td>
+				<td class="field">
+					<input id="clave">
+				</td>
+			</tr>
+			<tr>
+				<td class="label">
+					Descripción:
+				</td>
+				<td class="field">
+					<textarea id="descripcion"></textarea>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2" align="center">
+					<input type="button" value="Agregar" onclick="doSubmit()"/>
+				</td>
+			</tr>
+		</table>
+		</center>
+		</form>
+
+
 		</div>
 
 	</div>
 
 </body>
+<<<<<<< HEAD
 </html>
+=======
+ <script>
+	function doSubmit(){
+		removeErrorMessages();
+		validateRequired("nombre","El campo nombre es requerido");
+		validateRequired("clave", "El campo clave es requerido");
+		validateRequired("descripcion","El campo descripción es requerido");
+
+		if(formValidation){
+			addItemConfirmation("Elemento agregado con exito","list.html");
+		}
+	}
+ </script>
+
+
+ </html>
+>>>>>>> 8a65605ececa20f7b8fa4e4829ed15ae51218e26

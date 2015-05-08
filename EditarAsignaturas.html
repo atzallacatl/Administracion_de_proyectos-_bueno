@@ -63,28 +63,61 @@
 
 		<div id="areaDeTrabajo">
 			<center>
-				<h2>Salones</h2>
-				<table class="catalog">
-					<tr>
-						<td>Salón</td>
-						<td>Edificio</td>
-						<td>División</td>
-						<td>Cupo</td>
-					</tr>
-					<tr>
-						<td>A121</td>
-						<td>A1</td>
-						<td>División de Humanidades</td>
-						<td>40</td>
-					</tr>
-					<tr>
-						<td>A211</td>
-						<td>A2</td>
-						<td>División de Ciencias Jurídicas</td>
-						<td>25</td>
-					</tr>
-				</table>
+				<h2> Asignaturas</h2>
 			</center>
+			<table class="catalog">
+				<tr>
+					<td>Carrera</td>
+					<td>Nombre</td>
+					<td>Modalidad</td>
+					<td>Carácter</td>
+					<td>Horas al semestre</td>
+					<td>Horas a la semana</td>
+					<td>Horas teóricas</td>
+					<td>Horasprácticas</td>
+					<td>Horas de laboratorio</td>
+					<td>Créditos</td>
+					<td>Seriación</td>
+					<td>Seriación subsecuente</td>
+					<td>Seriación antecedente</td>
+					<td>Editar</td>
+					<td>Eliminar</td>
+				</tr>
+				<tr>
+					<td>Derecho</td>
+					<td>Derecho penal I</td>
+					<td>Taller</td>
+					<td>Obligatorio</td>
+					<td>80</td>
+					<td>5</td>
+					<td>70</td>
+					<td>10</td>
+					<td>00</td>
+					<td>10</td>
+					<td>si</td>
+					<td>Introducción al derecho</td>
+					<td>Derecho penal II</td>
+					<td><img class="button" src="img/edit-icon.png" onclick="gotoModify();"></td>
+					<td><img class="button" src="img/editing-delete-icon.png" onclick="deleteItem('Administración de proyectos');"></td>
+				</tr>
+				<tr>
+					<td>Matemáticas Aplicadas y Computación</td>
+					<td>Álgebra Superior I</td>
+					<td>Curso</td>
+					<td>Obligatorio</td>
+					<td>80</td>
+					<td>80</td>
+					<td>00</td>
+					<td>00</td>
+					<td>10</td>
+					<td>si</td>
+					<td>--</td>
+					<td>Algebra Superior II</td>
+					<td></td>
+					<td><img class="button" src="img/edit-icon.png" onclick="gotoModify();"></td>
+					<td><img class="button" src="img/editing-delete-icon.png" onclick="deleteItem('Administración de proyectos');"></td>
+				</tr>
+			</table>
 		</div>
 
 	</div>

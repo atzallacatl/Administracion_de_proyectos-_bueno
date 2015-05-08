@@ -7,26 +7,15 @@
 	<link rel="stylesheet" href="css/style.css">
 	<script type="text/javascript" src="js/main.js" ></script>
 	<script type="text/javascript" src="js/menu.js" ></script>
-
 	<script src="js/alertify.min.js"></script>
 	<link rel="stylesheet" href="css/alertify.core.css" />
 	<link rel="stylesheet" href="css/alertify.default.css" />
 	<script src="js/dialogs.js"></script>
-
 	<meta charset="UTF-8">
 	<title>
 		Sistema de Asignación de Horarios y Salones
 	</title>
 	<link rel="shortcut icon" href="img/favicon.png" type="favicon/ico" />
-
-
-
-
-
-
-
-
-
 
 </head>
 
@@ -78,116 +67,47 @@
 
 		<div id="areaDeTrabajo">
 			<center>
-				<h2> Area de trabajo </h2>
+				<h2>Jefes de Carrera </h2>
 			</center>
 
-
-			<h3 align="center">Catálogo de Materias</h3>
-		<center>
-		<table class="catalog">
-			<tr>
-				<td>
-					Id
-				</td>
-				<td>
-					Nombre
-				</td>
-				<td>
-					Clave
-				</td>
-				<td>
-					Descripción
-				</td>
-				<td>
-					Modificar
-				</td>
-				<td>
-					Eliminar
-				</td>
-			</tr>
-			<tr>
-				<td>
-					001
-				</td>
-				<td>
-					Matemáticas I
-				</td>
-				<td>
-					A01M001
-				</td>
-				<td>
-					Fundamentos Básicos de Algebra
-				</td>
-				<td>
-					<img class="button" src="img/edit-icon.png"  onclick="gotoModify();">
-				</td>
-				<td>
-					<img class="button" src="img/editing-delete-icon.png" onclick="deleteItem('Matemáticas I');">
-				</td>
-			</tr>
-			<tr>
-				<td>
-					002
-				</td>
-				<td>
-					Matemáticas II
-				</td>
-				<td>
-					A01M002
-				</td>
-				<td>
-					Fundamentos Avanzados de Algebra
-				</td>
-				<td>
-					<img class="button" src="img/edit-icon.png"  onclick="gotoModify();">
-				</td>
-				<td>
-					<img class="button" src="img/editing-delete-icon.png" onclick="deleteItem('Matemáticas II');">
-				</td>
-			</tr>
-			<tr>
-				<td>
-					003
-				</td>
-				<td>
-					Administración de proyectos
-				</td>
-				<td>
-					A02C001
-				</td>
-				<td>
-					Administración y gestión de proyectos alienados a PMBOK
-				</td>
-				<td>
-					<img class="button" src="img/edit-icon.png"  onclick="gotoModify();">
-				</td>
-				<td>
-					<img class="button" src="img/editing-delete-icon.png" onclick="deleteItem('Administración de proyectos');">
-				</td>
-			</tr>
-		</table>
-		<br>
-
-		<input type="button" value="Agregar" onclick="gotoAdd();"/>
-		</center>
-	</body>
- </html>
-
- <script>
-	function gotoAdd(){
-		window.location="AgregarJefesCarrera.html";
-	}
-
-//	function gotoModify(){
-//		window.location="E";
-//	}
+			<table class="catalog">
+				<tr>
+					<td>Nombre</td>
+					<td>Apellido Paterno</td>
+					<td>Apellido Materno</td>
+					<td>Nivel Académico</td>
+					<td>Estudio</td>
+					<td>Domicilio Particular</td>
+					<td>Domicilio Laboral</td>
+					<td>Puesto</td>
+					<td>Estado</td>
+				</tr>	
+				<tr>
+					<td>Gabriela</td>
+					<td>Martínez</td>
+					<td>Quezada</td>
+					<td>Licenciatura</td>
+					<td>Matemáticas Aplicadas</td>
+					<td>Iztapalapa</td>
+					<td>Naucalpan Col. Santa Cruz Acatlán</td>
+					<td>Jefe de carrera</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>Germán</td>
+					<td>Zapata</td>
+					<td>Ledesma</td>
+					<td>Licenciatura</td>
+					<td>Matemáticas Aplicadas</td>
+					<td>Iztapalapa</td>
+					<td>Naucalpan Col. Santa Cruz Acatlán</td>
+					<td>Jefe de carrera</td>
+					<td></td>
+				</tr>
+			</table>
 
 		</div>
 
 	</div>
 
 </body>
-<<<<<<< HEAD
-</html>
-=======
->>>>>>> 8a65605ececa20f7b8fa4e4829ed15ae51218e26

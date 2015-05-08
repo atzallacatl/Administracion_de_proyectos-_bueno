@@ -82,72 +82,13 @@
 
 		<div id="areaDeTrabajo">
 			<center>
-				<h2> Area de trabajo </h2>
+				<h2> Agregar Asignatura.</h2>
 			</center>
-
-<h3 align="center">Catálogo de Materias</h3>
-		<form id="theForm">
-		<center>
-		<table class="formTable">
-			<tr>
-				<th class="formTitle" colspan="2">
-					Agregar Materia
-				</th>
-			</tr>
-			<tr>
-				<td class="label">
-					Nombre:
-				</td>
-				<td class="field">
-					<input id="nombre">
-				</td>
-			</tr>
-			<tr>
-				<td class="label">
-					Clave:
-				</td>
-				<td class="field">
-					<input id="clave">
-				</td>
-			</tr>
-			<tr>
-				<td class="label">
-					Descripción:
-				</td>
-				<td class="field">
-					<textarea id="descripcion"></textarea>
-				</td>
-			</tr>
-			<tr>
-				<td colspan="2" align="center">
-					<input type="button" value="Agregar" onclick="doSubmit()"/>
-				</td>
-			</tr>
-		</table>
-		</center>
-		</form>
-
 
 		</div>
 
 	</div>
 
 </body>
-
-
- <script>
-	function doSubmit(){
-		removeErrorMessages();
-		validateRequired("nombre","El campo nombre es requerido");
-		validateRequired("clave", "El campo clave es requerido");
-		validateRequired("descripcion","El campo descripción es requerido");
-
-		if(formValidation){
-			addItemConfirmation("Elemento agregado con exito","list.html");
-		}
-	}
- </script>
-
-
  </html>
 

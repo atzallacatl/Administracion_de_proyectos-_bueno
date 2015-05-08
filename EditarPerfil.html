@@ -20,7 +20,7 @@
 </head>
 
 <body>
-	<<img src="img/header.png" style="width: 90%; margin-left: 5.5%;">
+	<img src="img/header.png" style="width: 90%; margin-left: 5.5%;">
 
 	<div id="menu1">
 
@@ -42,72 +42,8 @@
 			</center>
 
 
-<<<<<<< HEAD
+
+</div>
+</div>
 </body>
 </html>
-=======
-<h3 align="center">Catálogo de Materias</h3>
-		<form id="theForm">
-		<center>
-		<table class="formTable">
-			<tr>
-				<th class="formTitle" colspan="2">
-					Modificar Materia
-				</th>
-			</tr>
-			<tr>
-				<td class="label">
-					Id:
-				</td>
-				<td class="field">
-					<input id="id" value="001" disabled="true">
-				</td>
-			</tr>
-			<tr>
-				<td class="label">
-					Nombre:
-				</td>
-				<td class="field">
-					<input id="nombre" value="Matemáticas I">
-				</td>
-			</tr>
-			<tr>
-				<td class="label">
-					Clave:
-				</td>
-				<td class="field">
-					<input id="clave" value="A01M001">
-				</td>
-			</tr>
-			<tr>
-				<td class="label">
-					Descripción:
-				</td>
-				<td class="field">
-					<textarea id="descripcion">Fundamentos Básicos de Algebra</textarea>
-				</td>
-			</tr>
-			<tr>
-				<td colspan="2" align="center">
-					<input type="button" value="Modificar" onclick="doSubmit()"/>
-				</td>
-			</tr>
-		</table>
-		</center>
-		</form>
-	</body>
- </html>
-
- <script>
-	function doSubmit(){
-		removeErrorMessages();
-		validateRequired("nombre","El campo nombre es requerido");
-		validateRequired("clave", "El campo clave es requerido");
-		validateRequired("descripcion","El campo descripción es requerido");
-
-		if(formValidation){
-			modifyItem(document.getElementById("id").value,"list.html");
-		}
-	}
- </script>
->>>>>>> 8a65605ececa20f7b8fa4e4829ed15ae51218e26

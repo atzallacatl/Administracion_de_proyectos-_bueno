@@ -188,7 +188,7 @@ body {
 	padding: 8px; width: 300px;
 }
 .contact_form button {
-	margin-left: 156px;
+	margin-left: 810px;
 }
 /* form element visual styles */
 .contact_form input, .contact_form textarea {
@@ -226,7 +226,7 @@ body {
 
 /* === Button Style === */
 button.submit {
-	background-color: #68b12f; background: -webkit-gradient(linear, left top, left bottom, from(#68b12f), to(#50911e)); background: -webkit-linear-gradient(top, #68b12f, #50911e); background: -moz-linear-gradient(top, #68b12f, #50911e); background: -ms-linear-gradient(top, #68b12f, #50911e); background: -o-linear-gradient(top, #68b12f, #50911e); background: linear-gradient(top, #68b12f, #50911e); border: 1px solid #509111; border-bottom: 1px solid #5b992b; border-radius: 3px; -webkit-border-radius: 3px; -moz-border-radius: 3px; -ms-border-radius: 3px; -o-border-radius: 3px; box-shadow: inset 0 1px 0 0 #9fd574; -webkit-box-shadow: 0 1px 0 0 #9fd574 inset; -moz-box-shadow: 0 1px 0 0 #9fd574 inset; -ms-box-shadow: 0 1px 0 0 #9fd574 inset; -o-box-shadow: 0 1px 0 0 #9fd574 inset; color: white; font-weight: bold; padding: 6px 20px; text-align: center; text-shadow: 0 -1px 0 #396715;
+	background-color: #1813CA; background: -webkit-gradient(linear, left top, left bottom, from(#1813CA), to(#1813CA)); background: -webkit-linear-gradient(top, #1813CA, #1813CA); background: -moz-linear-gradient(top, #1813CA, #1813CA); background: -ms-linear-gradient(top, #1813CA, #1813CA); background: -o-linear-gradient(top, #1813CA, #1813CA); background: linear-gradient(top, #1813CA, #1813CA); border: 1px solid #1813CA border-bottom: 1px solid #5b992b; border-radius: 3px; -webkit-border-radius: 3px; -moz-border-radius: 3px; -ms-border-radius: 3px; -o-border-radius: 3px; box-shadow: inset 0 1px 0 0 #1813CA; -webkit-box-shadow: 0 1px 0 0 #1813CA inset; -moz-box-shadow: 0 1px 0 0 #1813CA inset; -ms-box-shadow: 0 1px 0 0 #1813CA inset; -o-box-shadow: 0 1px 0 0 #1813CA inset; color: white; font-weight: bold; padding: 6px 20px; text-align: center; text-shadow: 0 -1px 0 #1813CA
 }
 button.submit:hover {
 	opacity: .85; cursor: pointer;

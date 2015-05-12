@@ -152,7 +152,8 @@ body {
 	width: 935px;
 	list-style-type: none;
 	list-style-position: outside;
-	 margin: 0px;
+	  margin-top: 75px;
+	/* margin: 0px;*/
 	 padding: 0px;
 }
 .contact_form li {
@@ -170,7 +171,7 @@ body {
 	margin: 0; display: inline;
 }
 .required_notification {
-	color: #d45252; margin: 5px 0 0 0; display: inline; float: right;
+	color: #d45252; margin: -6px 0 0 0; display: inline; float: right;
 }
 /* === Form Elements === */
 .contact_form label {

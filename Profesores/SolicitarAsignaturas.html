@@ -7,6 +7,10 @@
 	<link rel="stylesheet" href="../css/style.css">
 	<script type="text/javascript" src="../js/main.js" ></script>
 	<script type="text/javascript" src="../js/menu.js" ></script>
+	<script src="../js/alertify.min.js"></script>
+	<link rel="stylesheet" href="../css/alertify.core.css" />
+	<link rel="stylesheet" href="../css/alertify.default.css" />
+	<script src="../js/dialogs.js"></script>
 	<meta charset="UTF-8">
 	<title>
 		Sistema de Asignación de Horarios y Salones
@@ -43,9 +47,35 @@
 
 
 		<div id="areaDeTrabajo">
-			<center>
+			
 				<h2> Area de trabajo </h2>
-			</center>
+				<form class="contact_form" action="#" id="contact_form" runat="server">
+				<div>
+					<!-- The second value will be selected initially -->
+					<label for="name">Materias:</label>
+					<select name="select">
+					<option value="value1" selected>IA</option>
+					<option value="value2">ICC1</option> 
+					<option value="value4">ICC2</option>
+					<option value="value5">Ing. Software</option>
+					<option value="value6">Redes</option>
+					</select>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<label for="name">Días:</label>
+				    <input type="text" placeholder="Lunes,Martes" required />
+				</div>
+				<BR>
+				<BR>
+				<div>
+					<label for="name">Fecha Inicio:</label>
+					<input type="time" name="usr_time">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<label for="name">Fecha Fin:</label>
+					<input type="time" name="usr_time">
+				
+				
+				</div>
+				
 		</div>
 
 	</div>

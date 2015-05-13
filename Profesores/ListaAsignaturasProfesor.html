@@ -1,0 +1,105 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<link rel="stylesheet" href="../css/estilo1.css">
+	<link rel="stylesheet" href="../css/style.css">
+	<script type="text/javascript" src="../js/main.js" ></script>
+	<script type="text/javascript" src="../js/menu.js" ></script>
+	<script type="text/javascript" src="../js/alertify.js" ></script>
+	<script type="text/javascript" src="../js/dialogs.js" ></script>
+	<meta charset="UTF-8">
+	<title>
+		Sistema de Asignación de Horarios y Salones
+	</title>
+	<link rel="shortcut icon" href="../img/favicon.png" type="favicon/ico" />
+
+</head>
+
+<body>
+	<img src="../img/header.png" style="width: 90%; margin-left: 5.5%;">
+	<div id="navegacion">
+
+	<a id= "inicio" href="../Index.html">Inicio</a>
+	<img  height="16" width="16" src="../img/house.png">
+	<span id ="saludo">
+	Conectado como Jefe de carrera
+	</span>
+	<a id = "salir" href="../Index.html"> Salir </a>
+	<img height="16" width="16" src="../img/salir.png" style="margin-right: -47px;float: right;">
+
+	</div>
+
+	<div id="menu1">
+
+		<div id="menu">
+			<ul>
+  				<li class="nivel1"><a href="EditarPerfil.html">Editar perfil</a>
+				</li>
+  				<li class="nivel1"><a href="SolicitarAsignaturas.html">Solicitar asignatura</a>
+				</li>
+				<li class="nivel1"><a href="ListaAsignaturasProfesor.html">Lista Asignaturas-Profesor</a>
+				</li>
+			</ul>
+		</div>
+
+
+		<div id="areaDeTrabajo">
+			
+				<h2> Lista de Asignaturas</h2>
+			
+			<table class="catalog">
+				<tr>
+					<td>Nombre Materia</td>
+					<td>Profesor</td>
+					<td class="chiquito">Hora de inicio</td>
+					<td class="chiquito">Hora de fin</td>
+					<td class="chiquito">Salón</td>
+					<td class="chiquito">Días</td>
+					<td class="chiquito">Edificio</td>
+					<td class="chiquito">Estado de Solicitud</td>
+					<td class="mediano">Editar</td>
+				</tr>
+				<tr>
+					<td>ICC1</td>
+					<td>Alejandro Hdez.</td>
+					<td class="chiquito">13:00 p.m</td>
+					<td class="chiquito">14:00 p.m</td>
+					<td class="chiquito">A-103</td>
+					<td class="chiquito">Lunes,Miércoles,Viernes</td>
+					<td class="chiquito">Edificio A </td>
+					<td class="chiquito">Aceptada</td>
+					<td class="mediano"><a href = "SolicitarAsignaturas.html"><img class="button" src="../img/edit-icon.png"></a></td>
+				</tr>
+				<tr>
+					<td>ICC2</td>
+					<td>Alejandra Jaramillo.</td>
+					<td class="chiquito">15:00 p.m</td>
+					<td class="chiquito">16:00 p.m</td>
+					<td class="chiquito">O-103</td>
+					<td class="chiquito">Lunes,Miércoles,Viernes</td>
+					<td class="chiquito">Edificio O </td>
+					<td class="chiquito">Rechazada</td>
+					<td class="mediano"><a href = "SolicitarAsignaturas.html"><img class="button" src="../img/edit-icon.png"></a></td>
+				</tr>
+				<tr>
+					<td>Ing. Software</td>
+					<td>Carlos Escalona.</td>
+					<td class="chiquito">17:00 p.m</td>
+					<td class="chiquito">18:00 p.m</td>
+					<td class="chiquito">P-103</td>
+					<td class="chiquito">Lunes,Miércoles,Viernes</td>
+					<td class="chiquito">Edificio P </td>
+					<td class="chiquito">Pendiente</td>
+					<td class="mediano"><a href = "SolicitarAsignaturas.html"><img class="button" src="../img/edit-icon.png"></a></td>
+				</tr>
+			</table>
+		</div>
+
+	</div>
+
+</body>
+</html>

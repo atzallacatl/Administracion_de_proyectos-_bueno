@@ -48,9 +48,14 @@
 
 		<div id="areaDeTrabajo">
 			
-				<h2> Area de trabajo </h2>
-				<form class="contact_form" action="#" id="contact_form" runat="server">
-				<div>
+			<h2> Solicitar Asignaturas </h2>
+			<form class="contact_form" action="#" id="contact_form" runat="server">
+			<div>
+			  <ul>
+				<li>
+				<span class="required_notification">* Datos requeridos</span>
+				</li>
+			  </ul>
 					<!-- The second value will be selected initially -->
 					<label for="name">Materias:</label>
 					<select name="select">
@@ -63,7 +68,7 @@
 					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 					<label for="name">Días:</label>
 				    <input type="text" placeholder="Lunes,Martes" required />
-				</div>
+		    </div>
 				<BR>
 				<BR>
 				<div>
@@ -73,9 +78,25 @@
 					<label for="name">Fecha Fin:</label>
 					<input type="time" name="usr_time">
 				
-				
+					
+				</div>
+				<div align="center">
+				<ul>	
+					<li> 
+					<button class="submit" type="submit"  value="Modificar" onclick="alert('Enviado exitosamente');doSubmit()">Aceptar</button> 
+					</li>
+				</ul>
 				</div>
 				
+				<BR>
+				
+				<div>
+					<h2> Agregar Materia </h2>
+					<BR>
+					<BR>
+					<a href="file:///C:/Users/INE/Desktop/Administracion_de_proyectos-_bueno/Profesores/FormularioNuevaMateria.html" target="_blank">Agregar Nueva Materia</a>				 
+				</div>
+			
 		</div>
 
 	</div>

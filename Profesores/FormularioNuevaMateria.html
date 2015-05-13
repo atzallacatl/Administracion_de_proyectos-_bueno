@@ -23,7 +23,7 @@
 	<img src="../img/header.png" style="width: 90%; margin-left: 5.5%;">
 	<div id="navegacion">
 
-	<a id= "inicio" href="../Index.html">Inicio</a>
+	<a id= "inicio" href="IndexProfesor.html">Inicio</a>
 	<img  height="16" width="16" src="../img/house.png">
 	<span id ="saludo">
 	Conectado como Profesor
@@ -47,10 +47,103 @@
 
 
 		<div id="areaDeTrabajo">
-			
+
 				<h2> Solicitar Asignaturas </h2>
-				
-				
+
+				<form class="contact_form" action="#" id="contact_form" runat="server">
+		<div>
+
+			<ul>
+				<li>
+
+				<span class="required_notification">* Datos requeridos</span>
+				</li>
+				<li>
+				<label for="name">Carrera:</label>
+				<select name="select">
+					<option value="value1" selected>Carrera 1</option>
+					<option value="value2">Carrera 1</option>
+					<option value="value4">Carrera 1</option>
+
+				</select>
+
+
+				<label for="name">Nombre:</label>
+				<input type="text" required />
+
+				<label for="name">Modalidad:</label>
+				<select name="select">
+					<option value="value1" selected>Diplomado</option>
+					<option value="value2">Precencial </option>
+					<option value="value4">Distancia</option>
+
+				</select>
+				</li>
+
+				<li>
+				<label for="name" >Carácter:</label>
+				<select name="select">
+					<option value="value1" selected>Carácter 1</option>
+					<option value="value2">Carácter 2</option>
+					<option value="value4">Carácter 3</option>
+
+				</select>
+
+				<label for="name" >Horas al semestre:</label>
+				<input type="text"  required />
+
+				<label for="name" >Horas a la semana:</label>
+				<input type="text"  required />
+				</li>
+
+				<li>
+				<label for="name" >Horas teóricas:</label>
+				<input type="text"  required />
+
+				<label for="name" >Horas prácticas:</label>
+				<input type="text"  required />
+
+				<label for="name" >Horas de laboratorio:</label>
+				<input type="text"  required />
+				</li>
+
+
+				<li>
+				<label for="name" >Créditos:</label>
+				<input type="text"  required />
+
+				<label for="name" >Seriación:</label>
+				<select name="select">
+					<option value="value1" selected>Si</option>
+					<option value="value2">No </option>
+
+
+					</select>
+
+				<label for="name" >Seriación subsecuente:</label>
+				<select name="select">
+					<option value="value1" selected>Si</option>
+					<option value="value2">No </option>
+
+
+					</select>
+				</li>
+				<li>
+				<label for="name" >Seriación antecedente:</label>
+				<select name="select">
+					<option value="value1" selected>Si</option>
+					<option value="value2">No </option>
+
+
+					</select>
+				</li>
+
+
+				<li> <button class="submit" type="submit">Aceptar</button> </li>
+			</ul>
+
+		</div>
+		</form>
 		</div>
 
 	</div>

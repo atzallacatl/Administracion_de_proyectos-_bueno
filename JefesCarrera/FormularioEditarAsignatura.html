@@ -19,12 +19,12 @@
 	<img src="../img/header.png" style="width: 90%; margin-left: 5.5%;">
 	<div id="navegacion">
 
-	<a id= "inicio" href="IndexJefeCarrera.html">Inicio</a>
+	<a id= "inicio" href="../Index.html">Inicio</a>
 	<img  height="16" width="16" src="../img/house.png">
 	<span id ="saludo">
 	Conectado como Jefe de carrera
 	</span>
-	<a id = "salir" href="../Index.html"> Salir </a>
+	<a id = "salir" href="IndexJefeCarrera.html"> Salir </a>
 	<img height="16" width="16" src="../img/salir.png" style="margin-right: -47px;float: right;">
 
 	</div>
@@ -71,45 +71,96 @@
 
 
 		<div id="areaDeTrabajo">
+			<center>
+				<h2>Formulario Asignaturas</h2>
+			</center>
 
-		<center><h2>Agregar Profesor.</h2></center>
 
 			<form class="contact_form" action="#" id="contact_form" runat="server">
 		<div>
 
 			<ul>
-
-
-
 				<li>
+
 				<span class="required_notification">* Datos requeridos</span>
 				</li>
 				<li>
+				<label for="name">Carrera:</label>
+				<select name="select">
+					<option value="value1" selected>Carrera 1</option>
+					<option value="value2">Carrera 2</option>
+					<option value="value4">Carrera 3</option>
+					<option value="value5">Carrera 4</option>
+					<option value="value6">Carrera 5</option>
+				</select>
+
 				<label for="name">Nombre:</label>
-				<input type="text"  required />
+				<input type="text"  placeholder="C.C" required />
 
-				<label for="name">Apellido Paterno:</label>
-				<input type="text"  required />
+				<label for="name">Modalidad:</label>
+				<select name="select">
+					<option value="value1" selected>Modalidad 1</option>
+					<option value="value2">Modalidad 2</option>
+					<option value="value4">Modalidad 3</option>
+					<option value="value5">Modalidad 4</option>
+					<option value="value6">Modalidad 5</option>
+					</select>
+				</li>
 
-				<label for="name">Apellido Materno:</label>
-				<input type="text"  required />
+				<li>
+				<label for="name" >Carácter:</label>
+				<select name="select">
+					<option value="value1" selected>Carácter 1</option>
+					<option value="value2">Carácter 2</option>
+					<option value="value4">Carácter 3</option>
+					<option value="value5">Carácter 4</option>
+
+					</select>
+
+				<label for="name" >Horas al semestre:</label>
+				<input type="text" placeholder="120"  required />
+
+				<label for="name" >Horas a la semana:</label>
+				<input type="text"  placeholder="7" required />
+				</li>
+
+				<li>
+				<label for="name" >Horas teóricas:</label>
+				<input type="text" placeholder="2" required />
+
+				<label for="name" >Horas prácticas:</label>
+				<input type="text" placeholder="3" required />
+
+				<label for="name" >Horas de laboratorio:</label>
+				<input type="text" placeholder="2" required />
 				</li>
 
 
-
 				<li>
-				<label for="name" >Usuario:</label>
-				<input type="text"  required />
+				<label for="name" >Créditos:</label>
+				<input type="text" placeholder="10" required />
 
-				<label for="name" >Contraseña:</label>
-				<input type="password"  required />
-
-				<label for="name" >Estado:</label>
+				<label for="name" >Seriación:</label>
 				<select name="select">
-					<option value="value1" selected>Activo</option>
-					<option value="value2">Inactivo</option>
-				</select>
+					<option value="value1" selected>No</option>
+					<option value="value2">Si</option>
 
+					</select>
+
+				<label for="name" >Seriación subsecuente:</label>
+				<select name="select">
+					<option value="value1" selected>No</option>
+					<option value="value2">Si</option>
+
+					</select>
+				</li>
+				<li>
+				<label for="name" >Seriación antecedente:</label>
+				<select name="select">
+					<option value="value1" selected>No</option>
+					<option value="value2">Si</option>
+
+					</select>
 				</li>
 
 
@@ -121,7 +172,11 @@
 
 		</div>
 
+
+		</div>
+
 	</div>
 
 </body>
 </html>
+

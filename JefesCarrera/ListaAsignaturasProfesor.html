@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -7,6 +8,8 @@
 	<link rel="stylesheet" href="../css/style.css">
 	<script type="text/javascript" src="../js/main.js" ></script>
 	<script type="text/javascript" src="../js/menu.js" ></script>
+	<script type="text/javascript" src="../js/alertify.js" ></script>
+	<script type="text/javascript" src="../js/dialogs.js" ></script>
 	<meta charset="UTF-8">
 	<title>
 		Sistema de Asignación de Horarios y Salones
@@ -19,12 +22,12 @@
 	<img src="../img/header.png" style="width: 90%; margin-left: 5.5%;">
 	<div id="navegacion">
 
-	<a id= "inicio" href="../Index.html">Inicio</a>
+	<a id= "inicio" href="IndexJefeCarrera.html">Inicio</a>
 	<img  height="16" width="16" src="../img/house.png">
 	<span id ="saludo">
 	Conectado como Jefe de carrera
 	</span>
-	<a id = "salir" href="IndexJefeCarrera.html"> Salir </a>
+	<a id = "salir" href="../Index.html"> Salir </a>
 	<img height="16" width="16" src="../img/salir.png" style="margin-right: -47px;float: right;">
 
 	</div>
@@ -50,60 +53,68 @@
 					<ul>
 						<li><a href="ConsultarSalones.html">Consultar</a></li>
 						<li><a href="AgregarSalones.html">Agregar</a></li>
-						<li><a href="EditarSalones.html">Editar</a></li>
+						<li><a href="EditarSalones.html">Editar/ Eliminar</a></li>
 					</ul>
 				</li>
   				<li class="nivel1"><a>Asignaturas</a>
 					<ul>
 						<li><a href="ConsultarAsignaturas.html">Consultar</a></li>
 						<li><a href="AgregarAsignaturas.html">Agregar</a></li>
-						<li><a href="EditarAsignaturas.html">Editar</a></li>
+						<li><a href="EditarAsignaturas.html">Editar/Eliminar</a></li>
 					</ul>
 				</li>
   				<li class="nivel1"><a href="SolicitudAsignaturas.html">Solicitudes de asignaturas</a>
 				</li>
   				<li class="nivel1"><a href="SolicitudAsignaturasNuevas.html">Solicitudes de asignaturas nuevas</a>
 				</li>
-				<li class="nivel1"><a href="ListaAsignaturasProfesor.html ">Lista Asignaturas-Profesor</a>
+				<li class="nivel1"><a href="ListaAsignaturasProfesor.html">Lista Asignaturas-Profesor</a>
 				</li>
 			</ul>
 		</div>
 
 
 		<div id="areaDeTrabajo">
-			<center>
-				<h2>Salones</h2>
-			</center>
+
+				<h2> Lista de Asignaturas</h2>
+
 			<table class="catalog">
-					<tr>
-						<td class="mediano">Salón</td>
-						<td class="mediano">Edificio</td>
-						<td>División</td>
-						<td class="chiquito">Cupo</td>
-						<td class="mediano">Editar</td>
-					</tr>
-					<tr>
-						<td class="mediano">A-103</td>
-					<td class="mediano">Edificio A</td>
-					<td>Departamento de Ciencias</td>
-					<td class="chiquito">40</td>
-						<td class="mediano"><a href="FormularioSalones.html"><img class="button" src="../img/edit-icon.png"></a></td>
-					</tr>
-					<tr>
-						<td class="mediano">O-103</td>
-					    <td class="mediano">Edificio O</td>
-					    <td>Departamento de Ciencias</td>
-					    <td class="chiquito">25</td>
-						<td class="mediano"><a href="FormularioSalones.html"><img class="button" src="../img/edit-icon.png"></td>
-					</tr>
-					<tr>
-						<td class="mediano">P-103</td>
-					<td class="mediano">Edificio P</td>
-					<td>Departamento de Ciencias</td>
-					<td class="chiquito">25</td>
-						<td class="mediano"><a href="FormularioSalones.html"><img class="button" src="../img/edit-icon.png"></td>
-					</tr>
-				</table>
+				<tr>
+					<td>Nombre Materia</td>
+					<td>Profesor</td>
+					<td class="chiquito">Hora de inicio</td>
+					<td class="chiquito">Hora de fin</td>
+					<td class="chiquito">Salón</td>
+					<td class="chiquito">Días</td>
+					<td class="chiquito">Edificio</td>
+				</tr>
+				<tr>
+					<td>ICC1</td>
+					<td>Alejandro Hdez.</td>
+					<td class="chiquito">13:00 p.m</td>
+					<td class="chiquito">14:00 p.m</td>
+					<td class="chiquito">A-103</td>
+					<td class="chiquito">Lunes,Miércoles,Viernes</td>
+					<td class="chiquito">Edificio A </td>
+				</tr>
+				<tr>
+					<td>ICC2</td>
+					<td>Alejandra Jaramillo.</td>
+					<td class="chiquito">15:00 p.m</td>
+					<td class="chiquito">16:00 p.m</td>
+					<td class="chiquito">O-103</td>
+					<td class="chiquito">Lunes,Miércoles,Viernes</td>
+					<td class="chiquito">Edificio O </td>
+				</tr>
+				<tr>
+					<td>Ing. Software</td>
+					<td>Carlos Escalona.</td>
+					<td class="chiquito">17:00 p.m</td>
+					<td class="chiquito">18:00 p.m</td>
+					<td class="chiquito">P-103</td>
+					<td class="chiquito">Lunes,Miércoles,Viernes</td>
+					<td class="chiquito">Edificio P </td>
+				</tr>
+			</table>
 		</div>
 
 	</div>

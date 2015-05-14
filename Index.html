@@ -5,41 +5,17 @@
 
 
 
- <script>
-	function doSubmit(){
-		removeErrorMessages();
-		validateRequired("usuario","El Campo Usuario es requerido");
-		validateRequired("passwd","El Campo Contraseña es requerido");
-
-		if(formValidation && validarLogin()){
-			if(window.document.forms[0].usuario.value=="jefe"){
-				window.location="JefesCarrera/IndexJefeCarrera.html";
-			}else if(window.document.forms[0].usuario.value=="profesor"){
-					window.location="Profesores/IndexProfesor.html";
-		}
-	}
-
-	function validarLogin(){
-		if(window.document.forms[0].usuario.value=="profesor"
-		|| window.document.forms[0].usuario.value=="jefe"){
-			return true;
-		}else{
-			invalidateForm("Combinacion usuario/contraseña es incorrecta");
-			return false;
-		}
-
-	}
-}
-
-
-
- </script>
 
 
 
 
 <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="css/estilo1.css">
+<script src="js/alertify.min.js"></script>
+<link rel="stylesheet" href="css/alertify.core.css" />
+<link rel="stylesheet" href="css/alertify.default.css" />
+<!-- simplifica los dialogos -->
+<script src="js/dialogs.js"></script>
 <script type="text/javascript" src="js/main.js" ></script>
 <meta charset="UTF-8">
 	<title>
@@ -73,7 +49,7 @@
 				<input type="password" placeholder="Contraseña" required="" id="passwd" />
 			</div>
 			<div>
-				
+
 				<input type="button" value="Entrar" onclick="doSubmit()">
 
 			</div>
@@ -83,48 +59,35 @@
 </div><!-- container -->
 
 
-
-
-<!--
-<form id="theForm">
-		<center>
-		<table class="formTable">
-
-			<tr>
-				<th class="formTitle" colspan="2">
-					Usuario
-				</th>
-
-				</tr>
-				<tr>
-
-				<td class="field">
-					<input id="usuario">
-				</td>
-			</tr>
-			<tr>
-				<th class="formTitle" colspan="2">
-					Contraseña
-				</th>
-				</tr>
-
-
-				<tr>
-
-				<td class="field">
-					<input id="passwd" type="password">
-				</td>
-
-			</tr>
-			<tr>
-				<td colspan="2" align="center">
-					<input type="button" value="Entrar" onclick="doSubmit()">
-				</td>
-			</tr>
-		</table>
-		</center>
-		</form>
-		-->
-
 </body>
 </html>
+
+ <script>
+	function doSubmit(){
+		removeErrorMessages();
+		validateRequired("usuario","El Campo Usuario es requerido");
+		validateRequired("passwd","El Campo Contraseña es requerido");
+
+		if(formValidation && validarLogin()){
+			if(window.document.forms[0].usuario.value=="jefe"){
+				window.location="JefesCarrera/IndexJefeCarrera.html";
+			}else if(window.document.forms[0].usuario.value=="profesor"){
+					window.location="Profesores/IndexProfesor.html";
+		}
+	}
+
+	function validarLogin(){
+		if(window.document.forms[0].usuario.value=="profesor"
+		|| window.document.forms[0].usuario.value=="jefe"){
+			return true;
+		}else{
+			invalidateForm("Combinacion usuario/contraseña es incorrecta");
+			return false;
+		}
+
+	}
+}
+
+
+
+ </script>

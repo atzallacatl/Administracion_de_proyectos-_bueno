@@ -4,10 +4,12 @@ var oldStayle;
 
 function addMenuItem(label,location){
 	
-	var menu = window.document.getElementById("navBar").rows[0];
+	var menu = window.document.getElementById("navBar");
+	var menurow = document.createElement("tr");
 	var menuItem = document.createElement("td");
 	menuItem.innerHTML="<a href='#' onclick='activateMenuItem(this,\""+location+"\");'>"+label+"</a>";
-	menu.appendChild(menuItem);
+	menurow.appendChild(menuItem);
+	menu.appendChild(menurow);
 }
 
 function activateMenuItem(menuLink,location){
@@ -16,8 +18,10 @@ function activateMenuItem(menuLink,location){
 
 function addMenuExit(label,location){
 	
-	var menu = window.document.getElementById("navBar").rows[0];
+	var menu = window.document.getElementById("navBar");
+	var menurow = document.createElement("tr");
 	var menuItem = document.createElement("td");
 	menuItem.innerHTML="<a href='#' onclick='window.top.location=\"../index.html\";'>"+label+"</a>";
-	menu.appendChild(menuItem);
+	menurow.appendChild(menuItem);
+	menu.appendChild(menurow);
 }

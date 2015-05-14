@@ -8,18 +8,33 @@ function validateRequired(fieldId,message){
 	
 	if(!document.getElementById(fieldId) ||  document.getElementById(fieldId).value.length==0){
 		formValidation=false;
-		addErrorMessage(message);
+		//addErrorMessage(message);
+		alertify.error(message);
 	}
 	
 }
 
 function validateFormat(fieldId,regexp,message){
-	
+	if(!regexp.test(document.getElementById(fieldId).value)){
+		formValidation=false;
+		alertify.error(message);
+	}
 }
+
+
+function validateAlphabetic(fieldId,message){
+	validateFormat(fieldId,/^[A-Za-z]*$/,message);
+}
+
+function validateNumeric(fieldId,message){
+	validateFormat(fieldId,/^[0-9]*$/,message);
+}
+
 
 function invalidateForm(message){
 	formValidation=false;
-	addErrorMessage(message);
+	//addErrorMessage(message);
+	alertify.error(message);
 }
 
 

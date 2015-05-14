@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<link rel="stylesheet" href="../css/estilo1.css">
+	<link rel="stylesheet" href="../css/style.css">
+	<script type="text/javascript" src="../js/main.js" ></script>
+	<script type="text/javascript" src="../js/menu.js" ></script>
+	<script src="../js/alertify.min.js"></script>
+	<link rel="stylesheet" href="../css/alertify.core.css" />
+	<link rel="stylesheet" href="../css/alertify.default.css" />
+	<script src="../js/dialogs.js"></script>
+	<meta charset="UTF-8">
+	<title>
+		Sistema de Asignación de Horarios y Salones
+	</title>
+	<link rel="shortcut icon" href="../img/favicon.png" type="favicon/ico" />
+
+</head>
+
+<body>
+	<img src="../img/header.png" style="width: 90%; margin-left: 5.5%;">
+	<div id="navegacion">
+
+	<a id= "inicio" href="../Index.html">Inicio</a>
+	<img  height="16" width="16" src="../img/house.png">
+	<span id ="saludo">
+	Conectado como Jefe de carrera
+	</span>
+	<a id = "salir" href="IndexJefeCarrera.html"> Salir </a>
+	<img height="16" width="16" src="../img/salir.png" style="margin-right: -47px;float: right;">
+
+	</div>
+
+	<div id="menu1">
+
+		<div id="menu">
+			<ul>
+				<li class = "nivel1 primera"><a href="EditarPerfilJ.html">Editar Perfil</a></li>
+  				<li class="nivel1"><a>Jefes de carrera</a>
+				<ul>
+					<li><a href="ConsultarJefesCarrera.html">Consultar</a></li>
+					<li><a href="AgregarJefesCarrera.html">Agregar</a></li>
+				</ul>
+			  	</li>
+  				<li class="nivel1"><a>Profesores</a>
+					<ul>
+						<li><a href="ConsultarProfesores.html">Consultar</a></li>
+						<li><a href="AgregarProfesores.html">Agregar</a></li>
+					</ul>
+				</li>
+  				<li class="nivel1"><a>Salones</a>
+					<ul>
+						<li><a href="ConsultarSalones.html">Consultar</a></li>
+						<li><a href="AgregarSalones.html">Agregar</a></li>
+						<li><a href="EditarSalones.html">Editar/Eliminar</a></li>
+					</ul>
+				</li>
+  				<li class="nivel1"><a>Asignaturas</a>
+					<ul>
+						<li><a href="ConsultarAsignaturas.html">Consultar</a></li>
+						<li><a href="AgregarAsignaturas.html">Agregar</a></li>
+						<li><a href="EditarAsignaturas.html">Editar/Eliminar</a></li>
+					</ul>
+				</li>
+  				<li class="nivel1"><a href="SolicitudAsignaturas.html">Solicitudes de asignaturas</a>
+				</li>
+  				<li class="nivel1"><a href="SolicitudAsignaturasNuevas.html">Solicitudes de asignaturas nuevas</a>
+				</li>
+				<li class="nivel1"><a href="ListaAsignaturasProfesor.html ">Lista Asignaturas-Profesor</a>
+				</li>
+			</ul>
+		</div>
+
+
+		<div id="areaDeTrabajo">
+
+
+
+
+
+			<form class="contact_form" action="#" id="contact_form" runat="server">
+		<div>
+
+			<ul>
+				<li>
+				<span><center><h2>Formulario Asignaturas</h2></center></span>
+				<span class="required_notification">* Datos requeridos</span>
+				</li>
+				<li>
+				<span><h4>Datos propuestos por el profesor</h4></span>
+
+				</li>
+
+				<li>
+
+
+
+
+
+
+				<label for="name">Nombre profesor:</label>
+				<input type="text"  placeholder="Carlos"  />
+
+				<label for="name">Asignatura solicitada:</label>
+				<input type="text"  placeholder="Fundamentos Bases de datos"  />
+
+				<label for="name">Horario solicitado:</label>
+				<input type="text"  placeholder="10:00 am - 11:00 am"  />
+				<br>
+				<label for="name">Dias solicitado:</label>
+				<input type="text"  placeholder="Lunes - Viernes"  />
+				<label for="name">Nombre curso propuesto:</label>
+				<input type="text"  placeholder="Sistemas manejadores de bases de datos"  />
+
+
+				</li>
+
+				<li>
+				<label for="name" >Edifico:</label>
+				<select name="select">
+					<option value="value1" selected>Edifico 1</option>
+					<option value="value2">Edifico 2</option>
+					<option value="value4">Edifico 3</option>
+					<option value="value5">Edifico 4</option>
+
+					</select>
+
+				<label for="name" >Salon:</label>
+				<select name="select">
+					<option value="value1" selected>Salon 1</option>
+					<option value="value2">Salon 2</option>
+					<option value="value4">Salon 3</option>
+					<option value="value5">Salon 4</option>
+
+					</select>
+
+				<label for="name" >Horario:</label>
+				<select name="select">
+					<option value="value1" selected>07:am-08;00am</option>
+					<option value="value2">08:am-09;00am</option>
+					<option value="value4">09:am-10;00am</option>
+					<option value="value5">10:am-11;00am</option>
+
+					</select>
+
+				<label for="name" >Dias:</label>
+				<select name="select">
+					<option value="value1" selected>Lunes a Viernes</option>
+					<option value="value2">Lunes-Miercoles-Viernes</option>
+					<option value="value4">Martes-Jueves</option>
+					<option value="value5">Viernes</option>
+
+				</select>
+
+				</li>
+
+
+				<li> <button class="submit" type="submit" onclick="doSubmit()">Aceptar</button>
+				 <button class="submit" type="submit" onclick="cancel()">Rechazar</button> </li>
+			</ul>
+
+		</div>
+		</form>
+
+		</div>
+
+
+		</div>
+
+	</div>
+
+
+
+
+
+</body>
+</html>
+
+
+ <script>
+	function doSubmit(){
+		removeErrorMessages();
+
+
+		if(formValidation){
+			addItemConfirmation("La peticion a sido aceptada  y el curso  se agregara a la lista de cursos","IndexJefeCarrera.html");
+		}
+	}
+
+	function cancel(){
+
+		if(formValidation){
+			addItemConfirmation("La peticion a sido rechazada","IndexJefeCarrera.html");
+		}
+	}
+ </script>

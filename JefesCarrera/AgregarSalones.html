@@ -7,6 +7,10 @@
 	<link rel="stylesheet" href="../css/style.css">
 	<script type="text/javascript" src="../js/main.js" ></script>
 	<script type="text/javascript" src="../js/menu.js" ></script>
+	<script src="../js/alertify.min.js"></script>
+	<link rel="stylesheet" href="../css/alertify.core.css" />
+	<link rel="stylesheet" href="../css/alertify.default.css" />
+	<script src="../js/dialogs.js"></script>
 	<meta charset="UTF-8">
 	<title>
 		Sistema de Asignación de Horarios y Salones
@@ -71,9 +75,7 @@
 
 
 		<div id="areaDeTrabajo">
-			<center>
-				<h2> Agregar Salón.</h2>
-			</center>
+
 
 
 		<form class="contact_form" action="#" id="contact_form" runat="server">
@@ -81,7 +83,7 @@
 
 			<ul>
 				<li>
-
+				<span><center><h2> Agregar Salón.</h2></center></span>
 				<span class="required_notification">* Datos requeridos</span>
 				</li>
 				<li>
@@ -112,7 +114,7 @@
 
 
 
-				<li> <button class="submit" type="submit">Aceptar</button> </li>
+				<li> <button class="submit" type="submit" onclick="doSubmit()">Agregar</button> </li>
 			</ul>
 
 		</div>
@@ -120,18 +122,26 @@
 
 		</div>
 
-
-
-
-
-
-
-
-
-
 		</div>
 
 	</div>
 
 </body>
 </html>
+ <script>
+	function doSubmit(){
+		removeErrorMessages();
+		/*
+		validateRequired("nombre","El campo nombre es requerido");
+		validateRequired("usuario", "El campo usuario es requerido");
+		validateRequired("pass", "El campo contraseña es requerido");
+		*/
+		if(formValidation){
+			addItemConfirmation("Elemento agregado con exito","IndexJefeCarrera.html");
+		}
+	}
+
+	function cancel(){
+		window.location="IndexJefeCarrera.html";
+	}
+ </script>

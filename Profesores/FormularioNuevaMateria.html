@@ -48,14 +48,14 @@
 
 		<div id="areaDeTrabajo">
 
-				<h2> Solicitar Asignaturas </h2>
+
 
 				<form class="contact_form" action="#" id="contact_form" runat="server">
 		<div>
 
 			<ul>
 				<li>
-
+				<span><h2> Solicitar Asignaturas </h2></span>
 				<span class="required_notification">* Datos requeridos</span>
 				</li>
 				<li>
@@ -138,15 +138,41 @@
 					</select>
 				</li>
 
-
-				<li> <button class="submit" type="submit">Aceptar</button> </li>
+<li> <button class="submit" type="submit"  value="Modificar" onclick="doSubmit()">Agregar</button> </li>
 			</ul>
 
 		</div>
 		</form>
+
 		</div>
 
-	</div>
 
-</body>
+		</div>
+		</div>
+		</body>
+
+
+
+
 </html>
+
+
+
+ <script>
+	function doSubmit(){
+		removeErrorMessages();
+		/*
+		validateRequired("nombre","El campo nombre es requerido");
+		validateRequired("puesto", "El campo puesto es requerido");
+		*/
+
+		if(formValidation){
+			addItemConfirmation("El elemento se agrego","IndexJefeCarrera.html");
+		}
+	}
+
+	function cancel(){
+		window.location="IndexJefeCarrera.html";
+	}
+ </script>
+

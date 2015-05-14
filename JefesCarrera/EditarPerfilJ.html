@@ -5,12 +5,15 @@
 
 	<link rel="stylesheet" href="../css/estilo1.css">
 	<link rel="stylesheet" href="../css/style.css">
+	<script src="../js/alertify.min.js"></script>
 	<script type="text/javascript" src="../js/main.js" ></script>
 	<script type="text/javascript" src="../js/menu.js" ></script>
-
-	<script src="../js/alertify.min.js"></script>
+	<script src="../js/dialogs.js"></script>
 	<link rel="stylesheet" href="../css/alertify.core.css" />
 	<link rel="stylesheet" href="../css/alertify.default.css" />
+
+	<script  type="text/javascript" src="../js/jquery-1.9.1.min.js"></script>
+
 	<meta charset="UTF-8">
 	<title>
 		Sistema de Asignación de Horarios y Salones
@@ -75,13 +78,13 @@
 
 
 		<div id="areaDeTrabajo">
-			<center><h2>Edita tu perfil.</h2></center>
+
 			<form class="contact_form" action="#" id="contact_form" runat="server">
 		<div>
 
 			<ul>
 				<li>
-
+				<span><center><h2>Edita tu perfil.</h2></center></span>
 				<span class="required_notification">* Datos requeridos</span>
 				</li>
 				<li>
@@ -146,13 +149,13 @@
  <script>
 	function doSubmit(){
 		removeErrorMessages();
-
+		/*
 		validateRequired("nombre","El campo nombre es requerido");
 		validateRequired("puesto", "El campo puesto es requerido");
-
+		*/
 
 		if(formValidation){
-			addItemConfirmation("Elemento agregado con exito","IndexJefeCarrera.html");
+			addItemConfirmation("Actualizaste tu perfil con exito","IndexJefeCarrera.html");
 		}
 	}
 

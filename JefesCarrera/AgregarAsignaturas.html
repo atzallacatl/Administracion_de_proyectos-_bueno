@@ -94,8 +94,8 @@
 				</select>
 
 
-				<label for="name">Nombre:</label>
-				<input type="text" required />
+				<label for="name" >Nombre:</label>
+				<input type="text" required   id="nombre" />
 
 				<label for="name">Modalidad:</label>
 				<select name="select">
@@ -116,27 +116,27 @@
 				</select>
 
 				<label for="name" >Horas al semestre:</label>
-				<input type="text"  required />
+				<input type="number"   />
 
 				<label for="name" >Horas a la semana:</label>
-				<input type="text"  required />
+				<input type="number"   />
 				</li>
 
 				<li>
 				<label for="name" >Horas teóricas:</label>
-				<input type="text"  required />
+				<input type="number"   />
 
 				<label for="name" >Horas prácticas:</label>
-				<input type="text"  required />
+				<input type="number"   />
 
 				<label for="name" >Horas de laboratorio:</label>
-				<input type="text"  required />
+				<input type="number"   />
 				</li>
 
 
 				<li>
 				<label for="name" >Créditos:</label>
-				<input type="text"  required />
+				<input type="number"  required / id="creditos">
 
 				<label for="name" >Seriación:</label>
 				<select name="select">
@@ -165,7 +165,7 @@
 				</li>
 
 
-				<li> <button class="submit" type="submit">Aceptar</button> </li>
+				<li> <button class="submit" type="submit" onclick="doSubmit();">Agregar</button> </li>
 			</ul>
 
 		</div>
@@ -180,3 +180,20 @@
 </body>
  </html>
 
+
+ <script>
+	function doSubmit(){
+		removeErrorMessages();
+
+		validateRequired("nombre","El campo nombre es requerido");
+		validateRequired("creditos", "El campo creditos es requerido");
+
+		if(formValidation){
+			addItemConfirmation("Elemento agregado con exito","IndexJefeCarrera.html");
+		}
+	}
+
+	function cancel(){
+		window.location="IndexJefeCarrera.html";
+	}
+ </script>

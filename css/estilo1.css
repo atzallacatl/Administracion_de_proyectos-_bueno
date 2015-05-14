@@ -266,14 +266,20 @@ body {
 }
 
 /* === Button Style === */
-button.submit {
+.contact_form button.submit {
 	background-color: #1813CA; background: -webkit-gradient(linear, left top, left bottom, from(#1813CA), to(#1813CA)); background: -webkit-linear-gradient(top, #1813CA, #1813CA); background: -moz-linear-gradient(top, #1813CA, #1813CA); background: -ms-linear-gradient(top, #1813CA, #1813CA); background: -o-linear-gradient(top, #1813CA, #1813CA); background: linear-gradient(top, #1813CA, #1813CA); border: 1px solid #1813CA border-bottom: 1px solid #5b992b; border-radius: 3px; -webkit-border-radius: 3px; -moz-border-radius: 3px; -ms-border-radius: 3px; -o-border-radius: 3px; box-shadow: inset 0 1px 0 0 #1813CA; -webkit-box-shadow: 0 1px 0 0 #1813CA inset; -moz-box-shadow: 0 1px 0 0 #1813CA inset; -ms-box-shadow: 0 1px 0 0 #1813CA inset; -o-box-shadow: 0 1px 0 0 #1813CA inset; color: white; font-weight: bold; padding: 6px 20px; text-align: center; text-shadow: 0 -1px 0 #1813CA
 }
-button.submit:hover {
+.contact_form button.submit:hover {
 	opacity: .85; cursor: pointer;
 }
-button.submit:active {
+.contact_form button.submit:active {
 	border: 1px solid #20911e; box-shadow: 0 0 10px 5px #356b0b inset; -webkit-box-shadow: 0 0 10px 5px #356b0b inset; -moz-box-shadow: 0 0 10px 5px #356b0b inset; -ms-box-shadow: 0 0 10px 5px #356b0b inset; -o-box-shadow: 0 0 10px 5px #356b0b inset;
+}
+
+.contact_form button a {
+
+  text-decoration: none;
+  color: white;
 }
 
 .uno{
@@ -389,7 +395,32 @@ form:after {
 	z-index: -2;
 }
 #content form { margin: 0 20px; position: relative }
-#content form input[type="text"],
+#content form input[type="text"]{
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-ms-border-radius: 3px;
+	-o-border-radius: 3px;
+	border-radius: 3px;
+	-webkit-box-shadow: 0 1px 0 #fff, 0 -2px 5px rgba(0,0,0,0.08) inset;
+	-moz-box-shadow: 0 1px 0 #fff, 0 -2px 5px rgba(0,0,0,0.08) inset;
+	-ms-box-shadow: 0 1px 0 #fff, 0 -2px 5px rgba(0,0,0,0.08) inset;
+	-o-box-shadow: 0 1px 0 #fff, 0 -2px 5px rgba(0,0,0,0.08) inset;
+	box-shadow: 0 1px 0 #fff, 0 -2px 5px rgba(0,0,0,0.08) inset;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+	background: #eae7e7 url(../img/login1.png) no-repeat;
+	  background-position-y: 14px;
+
+	border: 1px solid #c8c8c8;
+	color: #777;
+	font: 13px Helvetica, Arial, sans-serif;
+	margin: 0 0 10px;
+	padding: 15px 10px 15px 40px;
+	width: 80%;
+}
 #content form input[type="password"] {
 	-webkit-border-radius: 3px;
 	-moz-border-radius: 3px;
@@ -406,7 +437,9 @@ form:after {
 	-ms-transition: all 0.5s ease;
 	-o-transition: all 0.5s ease;
 	transition: all 0.5s ease;
-	background: #eae7e7 url(http://cssdeck.com/uploads/media/items/8/8bcLQqF.png) no-repeat;
+	background: #eae7e7 url(../img/login.png) no-repeat;
+
+  	background-position: 5px ;
 	border: 1px solid #c8c8c8;
 	color: #777;
 	font: 13px Helvetica, Arial, sans-serif;
@@ -448,7 +481,8 @@ form:after {
 	border: 1px solid #D69E31;
 	color: #85592e;
 	cursor: pointer;
-	float: left;
+	/*float: left;*/
+	  float: none;
 	font: bold 15px Helvetica, Arial, sans-serif;
 	height: 35px;
 	margin: 20px 0 35px 15px;

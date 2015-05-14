@@ -8,8 +8,10 @@
 	<link rel="stylesheet" href="../css/style.css">
 	<script type="text/javascript" src="../js/main.js" ></script>
 	<script type="text/javascript" src="../js/menu.js" ></script>
-	<script type="text/javascript" src="../js/alertify.js" ></script>
-	<script type="text/javascript" src="../js/dialogs.js" ></script>
+	<script src="../js/alertify.min.js"></script>
+	<link rel="stylesheet" href="../css/alertify.core.css" />
+	<link rel="stylesheet" href="../css/alertify.default.css" />
+	<script src="../js/dialogs.js"></script>
 	<meta charset="UTF-8">
 	<title>
 		Sistema de Asignación de Horarios y Salones
@@ -121,7 +123,7 @@
 
 			<ul>
 
-				<li> <button class="submit" type="submit">Imprimir</button> </li>
+			<li> <button class="submit" type="submit" onclick="doSubmit()">Aceptar</button> </li>
 			</ul>
 
 		</div>
@@ -133,3 +135,23 @@
 
 </body>
 </html>
+
+
+ <script>
+	function doSubmit(){
+		removeErrorMessages();
+		/*
+		validateRequired("nombre","El campo nombre es requerido");
+		validateRequired("puesto", "El campo puesto es requerido");
+		*/
+
+		if(formValidation){
+			addItemConfirmation("Imprimiendo","IndexJefeCarrera.html");
+		}
+	}
+
+	function cancel(){
+		window.location="IndexJefeCarrera.html";
+	}
+ </script>
+

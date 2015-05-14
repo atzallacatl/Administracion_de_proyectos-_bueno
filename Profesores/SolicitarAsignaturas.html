@@ -3,12 +3,14 @@
 
 <head>
 
+
 	<link rel="stylesheet" href="../css/estilo1.css">
 	<link rel="stylesheet" href="../css/style.css">
 	<script type="text/javascript" src="../js/main.js" ></script>
 	<script type="text/javascript" src="../js/menu.js" ></script>
 	<script src="../js/alertify.min.js"></script>
 	<link rel="stylesheet" href="../css/alertify.core.css" />
+	<link rel="stylesheet" href="../css/alertify.default.css" />
 	<script src="../js/dialogs.js"></script>
 	<meta charset="UTF-8">
 	<title>
@@ -82,19 +84,16 @@
 
 
 					<li>
-					<button class="submit" type="submit"  value="Modificar" onclick="alert('Enviado exitosamente');doSubmit()">Aceptar</button>
+					<button class="submit" type="submit"  onclick="doSubmit()">Aceptar</button>
 					</li>
 				</ul>
 				</div>
 
-				<br>
 
-				<div>
 					<h2> Agregar Materia </h2>
-					<BR>
-					<BR>
-					<a href="FormularioNuevaMateria.html" target="_blank">Agregar Nueva Materia</a>
-				</div>
+					<br>
+					<a href="FormularioNuevaMateria.html" >Agregar Nueva Materia</a>
+
 
 		</div>
 
@@ -102,3 +101,21 @@
 
 </body>
 </html>
+
+ <script>
+	function doSubmit(){
+		removeErrorMessages();
+		/*
+		validateRequired("nombre","El campo nombre es requerido");
+		validateRequired("puesto", "El campo puesto es requerido");
+		*/
+
+		if(formValidation){
+			addItemConfirmation("Solicitud enviada","IndexJefeCarrera.html");
+		}
+	}
+
+	function cancel(){
+		window.location="IndexJefeCarrera.html";
+	}
+ </script>

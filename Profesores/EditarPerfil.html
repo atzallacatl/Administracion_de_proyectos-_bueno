@@ -55,13 +55,13 @@
 
 
 
-		<center><h2>Edita tu perfil.</h2></center>
+
 			<form class="contact_form" action="#" id="contact_form" runat="server">
 		<div>
 
 			<ul>
 				<li>
-
+				<span><center><h2>Edita tu perfil.</h2></center></span>
 				<span class="required_notification">* Datos requeridos</span>
 				</li>
 				<li>
@@ -120,19 +120,23 @@
 		</div>
 		</body>
 
+
  <script>
 	function doSubmit(){
 		removeErrorMessages();
+		/*
 		validateRequired("nombre","El campo nombre es requerido");
-		validateRequired("clave", "El campo clave es requerido");
-		validateRequired("descripcion","El campo descripción es requerido");
+		validateRequired("puesto", "El campo puesto es requerido");
+		*/
 
 		if(formValidation){
-			modifyItem(document.getElementById("id").value,"list.html");
+			addItemConfirmation("Actualizaste tu perfil","IndexJefeCarrera.html");
 		}
+	}
+
+	function cancel(){
+		window.location="IndexJefeCarrera.html";
 	}
  </script>
 
-
-</html>
 

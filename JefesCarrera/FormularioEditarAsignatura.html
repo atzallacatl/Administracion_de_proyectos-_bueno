@@ -71,9 +71,7 @@
 
 
 		<div id="areaDeTrabajo">
-			<center>
-				<h2>Formulario Asignaturas</h2>
-			</center>
+
 
 
 			<form class="contact_form" action="#" id="contact_form" runat="server">
@@ -81,7 +79,7 @@
 
 			<ul>
 				<li>
-
+				<span><center><h2>Formulario Asignaturas</h2></center></span>
 				<span class="required_notification">* Datos requeridos</span>
 				</li>
 				<li>
@@ -164,7 +162,7 @@
 				</li>
 
 
-				<li> <button class="submit" type="submit">Aceptar</button> </li>
+		<li> <button class="submit" type="submit" onclick="doSubmit()">Aceptar</button> </li>
 			</ul>
 
 		</div>
@@ -172,11 +170,29 @@
 
 		</div>
 
-
 		</div>
 
 	</div>
 
+</body>
+</html>
+ <script>
+	function doSubmit(){
+		removeErrorMessages();
+		/*
+		validateRequired("nombre","El campo nombre es requerido");
+		validateRequired("usuario", "El campo usuario es requerido");
+		validateRequired("pass", "El campo contraseña es requerido");
+		*/
+		if(formValidation){
+			addItemConfirmation("Elemento agregado con exito","IndexJefeCarrera.html");
+		}
+	}
+
+	function cancel(){
+		window.location="IndexJefeCarrera.html";
+	}
+ </script>
 </body>
 </html>
 

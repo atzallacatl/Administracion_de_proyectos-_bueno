@@ -7,6 +7,10 @@
 	<link rel="stylesheet" href="../css/style.css">
 	<script type="text/javascript" src="../js/main.js" ></script>
 	<script type="text/javascript" src="../js/menu.js" ></script>
+	<script src="../js/alertify.min.js"></script>
+	<link rel="stylesheet" href="../css/alertify.core.css" />
+	<link rel="stylesheet" href="../css/alertify.default.css" />
+	<script src="../js/dialogs.js"></script>
 	<meta charset="UTF-8">
 	<title>
 		Sistema de Asignación de Horarios y Salones
@@ -28,6 +32,7 @@
 	<img height="16" width="16" src="../img/salir.png" style="margin-right: -47px;float: right;">
 
 	</div>
+
 	<div id="menu1">
 
 		<div id="menu">
@@ -36,7 +41,7 @@
 				</li>
   				<li class="nivel1"><a href="SolicitarAsignaturas.html">Solicitar asignatura</a>
 				</li>
-				<li class="nivel1"><a href="EstadoSolicitud.html">Estado Solicitud</a>
+				<li class="nivel1"><a href="EstadoSolicitud.html">Estado solicitud</a>
 				</li>
 				<li class="nivel1"><a href="ListaAsignaturasProfesor.html">Lista Asignaturas-Profesor</a>
 				</li>
@@ -45,12 +50,65 @@
 
 
 		<div id="areaDeTrabajo">
-			<center>
-				<h2> Area de trabajo </h2>
-			</center>
+
+
+
+
+
+		<center><h2>Perfil.</h2></center>
+			<form class="contact_form" action="#" id="contact_form" runat="server">
+		<div>
+
+			<ul>
+				<br>
+				<li>
+				<label for="name">Nombre:</label>
+				<input type="text" placeholder="Carlos Augusto" required />
+
+				<label for="name">Apellido Paterno:</label>
+				<input type="text" placeholder="Escalona" required />
+
+				<label for="name">Apellido Materno:</label>
+				<input type="text" placeholder="Navarro" required />
+				</li>
+
+
+
+				<li>
+				<label for="name" class="uno">Nivel Académico:</label>
+				<input type="text" placeholder="Licenciado" required />
+
+				<label for="name" class="dos">Estudio:</label>
+				<input type="text" placeholder="ciencias de  la computación" required />
+				</li>
+
+				<li>
+				<label for="name" class="uno">Domicilio Particular:</label>
+				<input type="text" placeholder="2° calle de rodolfo .." required />
+
+				<label for="name" class="dos">Domicilio Laboral:</label>
+				<input type="text" placeholder="UNAM" required />
+
+				</li>
+
+				<li>
+				<label for="name" class="uno">Puesto:</label>
+				<input type="text" placeholder="Jefe de carrera" required />
+
+				</li>
+			</ul>
+
+		</div>
+		</form>
+
 		</div>
 
-	</div>
 
-</body>
+		</div>
+		</div>
+		</body>
+
+
+
 </html>
+
